@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Detection Using Computer Vision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wildfire Detection Using Computer Vision</h1>
+        <p>Author: Dhrumil Patel</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#libraries">Libraries Used</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#success-failure">Success & Failures</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#future">Future Work</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </nav>
+
+    <!-- Abstract Section -->
+    <section id="abstract">
+        <h2>Abstract</h2>
+        <p>Every year around 70,000 wildfires occur worldwide, destroying forests and rendering them unfit for vegetation growth. This project proposes a computer vision-based deep learning model that can detect and alert for forest fires. Built using Python libraries like NumPy, OpenCV, and TensorFlow, this system provides early warnings, which are crucial for mitigating wildfire damage.</p>
+        <img src="wildfire.png" alt="Wildfire detection system image" />
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Wildfires are natural disasters that cause massive destruction to ecosystems and communities. With the advancement in technology, computer vision and deep learning have shown significant potential in detecting early signs of wildfire, such as smoke and flames.</p>
+        <ul>
+            <li>70,000 wildfires occur annually worldwide</li>
+            <li>Forest fires lead to massive carbon emissions and damage to biodiversity</li>
+            <li>Early detection can help minimize damage</li>
+        </ul>
+        <img src="wildfire_forest.avif" alt="Introduction image of wildfire detection" />
+    </section>
+
+    <!-- Libraries Used Section -->
+    <section id="libraries">
+        <h2>Libraries Used</h2>
+        <p>Several key machine learning and computer vision libraries were utilized in this project:</p>
+        <ul>
+            <li><strong>NumPy</strong> - For numerical computations and array operations.</li>
+            <li><strong>OpenCV</strong> - For image processing and real-time video analysis.</li>
+            <li><strong>Pillow</strong> - For image manipulation and transformations.</li>
+            <li><strong>Matplotlib</strong> - For plotting and visualizing results.</li>
+            <li><strong>TensorFlow</strong> - For deep learning and implementing models like CNN and MobileNet.</li>
+        </ul>
+        <img src="libraries.png" alt="Libraries used for detection" />
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology">
+        <h2>Methodology</h2>
+        <p>The wildfire detection model was built using the following steps:</p>
+        <ol>
+            <li><strong>Data Collection:</strong> Images and videos of wildfires were collected from publicly available datasets.</li>
+            <li><strong>Preprocessing:</strong> Image data was preprocessed using resizing, normalization, and augmentation techniques.</li>
+            <li><strong>Model Selection:</strong> Deep learning models, including CNN and MobileNet, were used to classify and detect fire signals.</li>
+            <li><strong>Training & Testing:</strong> The models were trained on labeled datasets and tested for accuracy, precision, and recall.</li>
+            <li><strong>Evaluation:</strong> The performance of the model was evaluated using metrics like F1 score, confusion matrix, and accuracy.</li>
+        </ol>
+        <img src="methodology.png" alt="Model training and evaluation graph" />
+    </section>
+
+    <!-- Success & Failure Section -->
+    <section id="success-failure">
+        <h2>Success and Failures</h2>
+        <h3>Success</h3>
+        <p>The proposed model was able to achieve significant accuracy in detecting wildfire-related indicators, such as smoke and flames. With further training and fine-tuning of the model, the detection accuracy can be improved even further.</p>
+        <ul>
+            <li>F1 score: 0.85</li>
+            <li>Precision: 0.88</li>
+            <li>Recall: 0.83</li>
+        </ul>
+
+        <h3>Failures</h3>
+        <p>Despite the success, the model struggled with certain challenges:</p>
+        <ul>
+            <li>False positives due to clouds or fog being mistaken for smoke.</li>
+            <li>False negatives due to poor image quality or low visibility of flames.</li>
+        </ul>
+        <img src="s_f.png" alt="Model performance results" />
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges">
+        <h2>Challenges</h2>
+        <p>The challenges faced during the development of this project were mainly due to environmental factors and data quality:</p>
+        <ul>
+            <li>Image quality and lighting variations impacted detection performance.</li>
+            <li>Generalizing the model to different environments (dense forests, urban areas) was difficult.</li>
+            <li>Lack of diverse training data affected model robustness.</li>
+        </ul>
+        <img src="challenges.png" alt="Challenges faced during project" />
+    </section>
+
+    <!-- Future Work Section -->
+    <section id="future">
+        <h2>Future Work</h2>
+        <p>There is potential to extend this project with the following advancements:</p>
+        <ul>
+            <li>Deploying the model on edge devices like drones for real-time monitoring.</li>
+            <li>Incorporating object tracking and segmentation for better localization of fires.</li>
+            <li>Improving model generalization by training on a more diverse dataset.</li>
+            <li>Using advanced models like YOLO for faster detection in live video streams.</li>
+        </ul>
+        <img src="future.png" alt="Future advancements in wildfire detection" />
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>This project demonstrates that computer vision can be effectively applied to detect wildfires at an early stage, minimizing damage to ecosystems and communities. Through the use of deep learning models such as CNN and MobileNet, accurate detection of fire indicators like smoke and flames was achieved. Future improvements will further enhance the capabilities of such systems.</p>
+        <img src="conclusion.png" alt="Conclusion of the study" />
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+        <h2>References</h2>
+        <ol>
+            <li><a href="https://doi.org/10.1109/ICESC54411.2022.9885250" target="_blank">P. R. A, G. P. Praneash, T. Rashmika, and A. Natarajan, "Forest Fire Detection using Computer Vision," 2022 3rd International Conference on Electronics and Sustainable Communication Systems (ICESC), Coimbatore, India, 2022.</a></li>
+            <li><a href="https://doi.org/10.1109/ICMI60790.2024.10585773" target="_blank">S. Maillard, M. S. Khan, A. Cramer, and E. K. Sancar, "Wildfire and Smoke Detection Using YOLO-NAS," 2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI), Mt Pleasant, MI, USA, 2024.</a></li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dhrumil Patel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
